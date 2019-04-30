@@ -1,0 +1,17 @@
+import java.awt.BorderLayout;
+import java.util.Calendar;
+import java.util.Date;
+import java.util.GregorianCalendar;
+
+import javax.swing.JPanel;
+
+public class CalendarPanel extends JPanel{
+	
+	private String monthInfo;
+	
+	
+	public CalendarPanel()
+	{
+		setLayout();
+	}
+}

@@ -1,0 +1,20 @@
+
+public class Event {
+
+	private String myName;
+	private int myStartTime;
+	private int myEndTime;
+	
+	public Event(String name, int start, int end)
+	{
+		myName = name;
+		myStartTime = start;
+		myEndTime = end;
+	}
+	
+	public void overlap(Event e)
+	{
+		
+	}
+	
+}

@@ -1,0 +1,14 @@
+import java.awt.BorderLayout;
+import java.util.Date;
+
+public class CalendarPanel {
+	private Date monthInfo;
+	public CalendarPanel()
+	{
+		myCalModel = dataModel.getCalendar();
+		myGCalModel = gc;
+		setLayout(new BorderLayout());
+		monthInfo = myGCalModel.getTime();
+		
+	}
+}

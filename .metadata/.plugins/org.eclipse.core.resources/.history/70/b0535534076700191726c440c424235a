@@ -1,0 +1,20 @@
+import java.awt.BorderLayout;
+import java.util.Date;
+
+public class CalendarPanel {
+	
+	private Calendar myCalModel;
+	private GregorianCalendr myGCalModel;
+	
+	private Date monthInfo;
+	
+	
+	public CalendarPanel()
+	{
+		myCalModel = dataModel.getCalendar();
+		myGCalModel = gc;
+		setLayout(new BorderLayout());
+		monthInfo = myGCalModel.getTime();
+		
+	}
+}

@@ -1,0 +1,37 @@
+
+public class Event {
+
+	private String myName;
+	private int myStartTime;
+	private int myEndTime;
+	
+	public Event(String name, int start, int end)
+	{
+		myName = name;
+		myStartTime = start;
+		myEndTime = end;
+	}
+	
+	public boolean overlap(Event e)
+	{
+		if(e.getStart() > this.myEndTime || )
+		{
+			
+		}
+	}
+	
+	public int getStart()
+	{
+		return myStartTime;
+	}
+	
+	public int getEnd()
+	{
+		return myEndTime;
+	}
+	
+	public String getName()
+	{
+		return name;
+	}
+}

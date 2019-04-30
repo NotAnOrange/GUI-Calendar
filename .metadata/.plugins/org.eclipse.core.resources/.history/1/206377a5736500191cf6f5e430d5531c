@@ -1,0 +1,23 @@
+import java.util.Calendar;
+
+public class CalendarTester {
+
+	public static void main(String[] args)
+	{
+		CalendarModel test = new CalendarModel();
+		
+		 // print the current date and time
+	      System.out.println("" + test.getGCalendar().getTime());
+
+	      // add 2 months 
+	      test.addMonth(2);
+
+	      // print the modified date and time
+	      System.out.println("" + test.getGCalendar().getTime());
+
+
+	      // print the modified date and time
+	      System.out.println("" + test.getGCalendar().getTime());
+	}
+	
+}

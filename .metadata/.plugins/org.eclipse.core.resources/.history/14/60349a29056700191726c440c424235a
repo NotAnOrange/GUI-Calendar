@@ -1,0 +1,15 @@
+import java.util.Calendar;
+import java.util.GregorianCalendar;
+
+import javax.swing.JPanel;
+
+public class CalendarPanel extends JPanel {
+	private Calendar myCalModel; 
+	private GregorianCalendar myGCalModel;
+	
+	public CalendarPanel()
+	{
+		
+	}
+	
+}
