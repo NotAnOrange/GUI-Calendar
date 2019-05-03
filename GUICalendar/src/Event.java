@@ -1,6 +1,6 @@
 import java.time.LocalTime;
 
-public class Event {
+public class Event implements java.io.Serializable{
 
 	private String myName;
 	private LocalTime myStartTime;

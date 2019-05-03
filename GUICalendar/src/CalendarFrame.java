@@ -1,20 +1,28 @@
 import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
+import java.io.File;
+import java.io.FileInputStream;
+import java.io.FileOutputStream;
+import java.io.IOException;
+import java.io.ObjectInputStream;
+import java.io.ObjectOutputStream;
 import java.text.DateFormat;
 import java.text.SimpleDateFormat;
+import java.time.LocalDate;
 import java.time.LocalTime;
 import java.util.ArrayList;
 import java.util.Calendar;
 import java.util.Date;
 import java.util.GregorianCalendar;
+import java.util.HashMap;
 
 import javax.swing.*;
 import javax.swing.border.*;
 import javax.swing.event.ChangeEvent;
 import javax.swing.event.ChangeListener;
 
-public class CalendarFrame extends JFrame
+public class CalendarFrame extends JFrame implements java.io.Serializable 
 {
 	public static final int WIDTH = 1000;
 	public static final int HEIGHT = 700;
@@ -31,7 +39,32 @@ public class CalendarFrame extends JFrame
 	
 	public CalendarFrame()
 	{
-		dataModel = new CalendarModel();
+		 try
+	        {    
+	            // Reading the object from a file 
+	            FileInputStream file = new FileInputStream("events.txt"); 
+	            ObjectInputStream in = new ObjectInputStream(file); 
+	              
+	            // Method for deserialization of object 
+	            HashMap<LocalDate, ArrayList<Event>> construct = 
+	            		(HashMap<LocalDate, ArrayList<Event>>)in.readObject(); 
+	          
+	            in.close(); 
+	            file.close(); 
+	            
+	            dataModel = new CalendarModel(construct);
+	        } 
+	          
+	        catch(IOException ex) 
+	        { 
+	            dataModel = new CalendarModel();
+	        } catch (ClassNotFoundException e) {
+				// TODO Auto-generated catch block
+				e.printStackTrace();
+			} 
+		
+		
+		
 		setSize(WIDTH,HEIGHT);
 		setLayout(new BorderLayout());
 		
@@ -45,7 +78,7 @@ public class CalendarFrame extends JFrame
 			@Override
 			public void actionPerformed(ActionEvent arg0) {
 				JFrame frame = new createEventFrame();
-				frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+				frame.setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
 				frame.setVisible(true);
 			}
 			
@@ -84,7 +117,11 @@ public class CalendarFrame extends JFrame
 		quit.addActionListener(new ActionListener() {
 			@Override
 			public void actionPerformed(ActionEvent arg0) {
-				CalendarFrame.this.dispose();
+				
+				if(dataModel.serialize())
+				{
+		        	CalendarFrame.this.dispose();
+		        } 
 			}
 		});
 		top.add(quit);
@@ -164,19 +201,44 @@ public class CalendarFrame extends JFrame
 			saveButton.addActionListener(new ActionListener() {
 				public void actionPerformed(ActionEvent arg0) {
 					String testName = nameField.getText();
-					LocalTime start = LocalTime.parse(eventStart.getText());
-					LocalTime end = LocalTime.parse(eventEnd.getText());
-					
-					Event test = new Event(testName, start, end);
-					
-					if(dataModel.addEvent(test))
+					try
 					{
-						createEventFrame.this.dispose();
+						LocalTime start = LocalTime.parse(eventStart.getText());
+						LocalTime end = LocalTime.parse(eventEnd.getText());
+					
+						Event test = new Event(testName, start, end);
+					
+						if(dataModel.addEvent(test))
+						{
+							createEventFrame.this.dispose();
+						}
+						else
+						{
+							JFrame error = new JFrame();
+							error.setSize(500,100);
+							JButton errorButton = new JButton("Error: Event Overlaps with "
+									+ "already scheduled event");
+							errorButton.setBackground(Color.WHITE);
+							errorButton.setForeground(Color.BLACK);
+							errorButton.addActionListener(new ActionListener()
+							{
+
+								@Override
+								public void actionPerformed(ActionEvent arg0) {
+									error.dispose();
+								}
+								
+							});
+							error.add(errorButton);
+							error.setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
+							error.setVisible(true);
+						}
 					}
-					else
+					catch(Exception e)
 					{
 						System.out.println("wrong input");
 					}
+				
 				}
 				
 			});

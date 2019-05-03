@@ -1091,3 +1091,197 @@ This warning can be switched off on the Team > Git > Confirmations and Warnings 
 
 !ENTRY org.eclipse.oomph.setup.ui 1 0 2019-04-29 14:51:14.160
 !MESSAGE Setup tasks were performed during startup. See 'C:\Users\stan\eclipse\java-oxygen\eclipse\configuration\org.eclipse.oomph.setup\setup.log' for details
+!SESSION 2019-05-02 14:09:27.368 -----------------------------------------------
+eclipse.buildId=4.7.2.M20171130-0510
+java.version=1.8.0_211
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_US
+Framework arguments:  -product org.eclipse.epp.package.java.product -product org.eclipse.epp.package.java.product -product org.eclipse.epp.package.java.product
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.java.product -product org.eclipse.epp.package.java.product -data C:\Users\stan\Documents\GitHub\GUI-Calendar -product org.eclipse.epp.package.java.product
+
+!ENTRY org.eclipse.egit.ui 2 0 2019-05-02 14:09:49.105
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\stan'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY org.eclipse.equinox.p2.director 2 10054 2019-05-02 14:10:06.857
+!MESSAGE Cannot complete the install because of a conflicting dependency.
+!SUBENTRY 1 org.eclipse.equinox.p2.director 4 0 2019-05-02 14:10:06.857
+!MESSAGE Software being installed: artificial_root 1.0.0.v1556831402555
+!SUBENTRY 1 org.eclipse.equinox.p2.director 4 1 2019-05-02 14:10:06.857
+!MESSAGE Only one of the following can be installed at once: 
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 0 2019-05-02 14:10:06.857
+!MESSAGE EclEmma Core 2.3.2.201409141915 (com.mountainminds.eclemma.core 2.3.2.201409141915)
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 0 2019-05-02 14:10:06.857
+!MESSAGE Old EclEmma version (com.mountainminds.eclemma) cannot be installed together with new (org.eclipse.eclemma). Uninstall currently installed version and try the install again. 3.1.0.201804041601 (com.mountainminds.eclemma.core 3.1.0.201804041601)
+!SUBENTRY 1 org.eclipse.equinox.p2.director 4 1 2019-05-02 14:10:06.857
+!MESSAGE Cannot satisfy dependency:
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 0 2019-05-02 14:10:06.857
+!MESSAGE From: artificial_root 1.0.0.v1556831402555
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 0 2019-05-02 14:10:06.857
+!MESSAGE To: com.mountainminds.eclemma.feature.feature.group 2.3.2.201409141915
+!SUBENTRY 1 org.eclipse.equinox.p2.director 4 1 2019-05-02 14:10:06.857
+!MESSAGE Cannot satisfy dependency:
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 0 2019-05-02 14:10:06.857
+!MESSAGE From: artificial_root 1.0.0.v1556831402555
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 0 2019-05-02 14:10:06.857
+!MESSAGE To: org.eclipse.eclemma.feature.feature.group 0.0.0
+!SUBENTRY 1 org.eclipse.equinox.p2.director 4 1 2019-05-02 14:10:06.857
+!MESSAGE Cannot satisfy dependency:
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 0 2019-05-02 14:10:06.857
+!MESSAGE From: EclEmma Java Code Coverage 2.3.2.201409141915 (com.mountainminds.eclemma.feature.feature.group 2.3.2.201409141915)
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 0 2019-05-02 14:10:06.857
+!MESSAGE To: com.mountainminds.eclemma.core [2.3.2.201409141915]
+!SUBENTRY 1 org.eclipse.equinox.p2.director 4 1 2019-05-02 14:10:06.857
+!MESSAGE Cannot satisfy dependency:
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 0 2019-05-02 14:10:06.857
+!MESSAGE From: EclEmma Java Code Coverage 3.1.0.201804041601 (org.eclipse.eclemma.feature.feature.group 3.1.0.201804041601)
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 0 2019-05-02 14:10:06.858
+!MESSAGE To: bundle com.mountainminds.eclemma.core [3.1.0.201804041601]
+
+!ENTRY org.eclipse.oomph.setup.ui 1 0 2019-05-02 14:10:06.864
+!MESSAGE Setup tasks were performed during startup. See 'C:\Users\stan\eclipse\java-oxygen\eclipse\configuration\org.eclipse.oomph.setup\setup.log' for details
+!SESSION 2019-05-02 14:21:50.785 -----------------------------------------------
+eclipse.buildId=4.7.2.M20171130-0510
+java.version=1.8.0_211
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_US
+Framework arguments:  -product org.eclipse.epp.package.java.product -product org.eclipse.epp.package.java.product -product org.eclipse.epp.package.java.product -product org.eclipse.epp.package.java.product -product org.eclipse.epp.package.java.product
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.java.product -product org.eclipse.epp.package.java.product -product org.eclipse.epp.package.java.product -product org.eclipse.epp.package.java.product -data C:\Users\stan\Documents\GitHub\GUI-Calendar -product org.eclipse.epp.package.java.product
+
+!ENTRY org.eclipse.egit.ui 2 0 2019-05-02 14:22:15.792
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\stan'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY org.eclipse.equinox.p2.director 2 10054 2019-05-02 14:22:27.458
+!MESSAGE Cannot complete the install because of a conflicting dependency.
+!SUBENTRY 1 org.eclipse.equinox.p2.director 4 0 2019-05-02 14:22:27.458
+!MESSAGE Software being installed: artificial_root 1.0.0.v1556832145239
+!SUBENTRY 1 org.eclipse.equinox.p2.director 4 1 2019-05-02 14:22:27.458
+!MESSAGE Only one of the following can be installed at once: 
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 0 2019-05-02 14:22:27.458
+!MESSAGE EclEmma Core 2.3.2.201409141915 (com.mountainminds.eclemma.core 2.3.2.201409141915)
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 0 2019-05-02 14:22:27.458
+!MESSAGE Old EclEmma version (com.mountainminds.eclemma) cannot be installed together with new (org.eclipse.eclemma). Uninstall currently installed version and try the install again. 3.1.0.201804041601 (com.mountainminds.eclemma.core 3.1.0.201804041601)
+!SUBENTRY 1 org.eclipse.equinox.p2.director 4 1 2019-05-02 14:22:27.458
+!MESSAGE Cannot satisfy dependency:
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 0 2019-05-02 14:22:27.458
+!MESSAGE From: artificial_root 1.0.0.v1556832145239
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 0 2019-05-02 14:22:27.458
+!MESSAGE To: com.mountainminds.eclemma.feature.feature.group 2.3.2.201409141915
+!SUBENTRY 1 org.eclipse.equinox.p2.director 4 1 2019-05-02 14:22:27.458
+!MESSAGE Cannot satisfy dependency:
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 0 2019-05-02 14:22:27.458
+!MESSAGE From: artificial_root 1.0.0.v1556832145239
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 0 2019-05-02 14:22:27.458
+!MESSAGE To: org.eclipse.eclemma.feature.feature.group 0.0.0
+!SUBENTRY 1 org.eclipse.equinox.p2.director 4 1 2019-05-02 14:22:27.458
+!MESSAGE Cannot satisfy dependency:
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 0 2019-05-02 14:22:27.458
+!MESSAGE From: EclEmma Java Code Coverage 2.3.2.201409141915 (com.mountainminds.eclemma.feature.feature.group 2.3.2.201409141915)
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 0 2019-05-02 14:22:27.458
+!MESSAGE To: com.mountainminds.eclemma.core [2.3.2.201409141915]
+!SUBENTRY 1 org.eclipse.equinox.p2.director 4 1 2019-05-02 14:22:27.458
+!MESSAGE Cannot satisfy dependency:
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 0 2019-05-02 14:22:27.458
+!MESSAGE From: EclEmma Java Code Coverage 3.1.0.201804041601 (org.eclipse.eclemma.feature.feature.group 3.1.0.201804041601)
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 0 2019-05-02 14:22:27.458
+!MESSAGE To: bundle com.mountainminds.eclemma.core [3.1.0.201804041601]
+
+!ENTRY org.eclipse.oomph.setup.ui 1 0 2019-05-02 14:22:27.476
+!MESSAGE Setup tasks were performed during startup. See 'C:\Users\stan\eclipse\java-oxygen\eclipse\configuration\org.eclipse.oomph.setup\setup.log' for details
+
+!ENTRY org.eclipse.recommenders.models.rcp 1 11 2019-05-02 14:25:25.227
+!MESSAGE The model index service was accessed either before it started or after it finished running.
+!STACK 0
+org.eclipse.recommenders.utils.Logs$LogTraceException
+	at org.eclipse.recommenders.utils.Logs$LogTraceException.newTrace(Logs.java:381)
+	at org.eclipse.recommenders.utils.Logs.log(Logs.java:134)
+	at org.eclipse.recommenders.utils.Logs.log(Logs.java:126)
+	at org.eclipse.recommenders.internal.models.rcp.EclipseModelIndex.suggest(EclipseModelIndex.java:211)
+	at org.eclipse.recommenders.models.SimpleModelProvider.acquireModel(SimpleModelProvider.java:70)
+	at org.eclipse.recommenders.models.PoolingModelProvider.access$0(PoolingModelProvider.java:1)
+	at org.eclipse.recommenders.models.PoolingModelProvider$ModelPoolFactoryMediator.makeObject(PoolingModelProvider.java:96)
+	at org.eclipse.recommenders.models.PoolingModelProvider$ModelPoolFactoryMediator.makeObject(PoolingModelProvider.java:1)
+	at org.apache.commons.pool.impl.GenericKeyedObjectPool.borrowObject(GenericKeyedObjectPool.java:1220)
+	at org.eclipse.recommenders.models.PoolingModelProvider.acquireModel(PoolingModelProvider.java:67)
+	at org.eclipse.recommenders.internal.calls.rcp.RcpCallModelProvider.acquireModel(RcpCallModelProvider.java:65)
+	at org.eclipse.recommenders.internal.calls.rcp.RcpCallModelProvider.acquireModel(RcpCallModelProvider.java:1)
+	at org.eclipse.recommenders.internal.models.rcp.PrefetchModelArchiveJob.run(PrefetchModelArchiveJob.java:43)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:56)
+!SESSION 2019-05-03 13:20:42.095 -----------------------------------------------
+eclipse.buildId=4.7.2.M20171130-0510
+java.version=1.8.0_211
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_US
+Framework arguments:  -product org.eclipse.epp.package.java.product
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.java.product
+
+!ENTRY org.eclipse.egit.ui 2 0 2019-05-03 13:21:04.668
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\stan'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY org.eclipse.equinox.p2.director 2 10054 2019-05-03 13:21:18.790
+!MESSAGE Cannot complete the install because of a conflicting dependency.
+!SUBENTRY 1 org.eclipse.equinox.p2.director 4 0 2019-05-03 13:21:18.790
+!MESSAGE Software being installed: artificial_root 1.0.0.v1556914876445
+!SUBENTRY 1 org.eclipse.equinox.p2.director 4 1 2019-05-03 13:21:18.790
+!MESSAGE Only one of the following can be installed at once: 
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 0 2019-05-03 13:21:18.790
+!MESSAGE EclEmma Core 2.3.2.201409141915 (com.mountainminds.eclemma.core 2.3.2.201409141915)
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 0 2019-05-03 13:21:18.790
+!MESSAGE Old EclEmma version (com.mountainminds.eclemma) cannot be installed together with new (org.eclipse.eclemma). Uninstall currently installed version and try the install again. 3.1.0.201804041601 (com.mountainminds.eclemma.core 3.1.0.201804041601)
+!SUBENTRY 1 org.eclipse.equinox.p2.director 4 1 2019-05-03 13:21:18.790
+!MESSAGE Cannot satisfy dependency:
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 0 2019-05-03 13:21:18.790
+!MESSAGE From: artificial_root 1.0.0.v1556914876445
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 0 2019-05-03 13:21:18.790
+!MESSAGE To: com.mountainminds.eclemma.feature.feature.group 2.3.2.201409141915
+!SUBENTRY 1 org.eclipse.equinox.p2.director 4 1 2019-05-03 13:21:18.790
+!MESSAGE Cannot satisfy dependency:
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 0 2019-05-03 13:21:18.790
+!MESSAGE From: artificial_root 1.0.0.v1556914876445
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 0 2019-05-03 13:21:18.790
+!MESSAGE To: org.eclipse.eclemma.feature.feature.group 0.0.0
+!SUBENTRY 1 org.eclipse.equinox.p2.director 4 1 2019-05-03 13:21:18.790
+!MESSAGE Cannot satisfy dependency:
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 0 2019-05-03 13:21:18.790
+!MESSAGE From: EclEmma Java Code Coverage 2.3.2.201409141915 (com.mountainminds.eclemma.feature.feature.group 2.3.2.201409141915)
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 0 2019-05-03 13:21:18.791
+!MESSAGE To: com.mountainminds.eclemma.core [2.3.2.201409141915]
+!SUBENTRY 1 org.eclipse.equinox.p2.director 4 1 2019-05-03 13:21:18.791
+!MESSAGE Cannot satisfy dependency:
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 0 2019-05-03 13:21:18.791
+!MESSAGE From: EclEmma Java Code Coverage 3.1.0.201804041601 (org.eclipse.eclemma.feature.feature.group 3.1.0.201804041601)
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 0 2019-05-03 13:21:18.791
+!MESSAGE To: bundle com.mountainminds.eclemma.core [3.1.0.201804041601]
+
+!ENTRY org.eclipse.oomph.setup.ui 1 0 2019-05-03 13:21:18.795
+!MESSAGE Setup tasks were performed during startup. See 'C:\Users\stan\eclipse\java-oxygen\eclipse\configuration\org.eclipse.oomph.setup\setup.log' for details
+
+!ENTRY org.eclipse.recommenders.models.rcp 1 11 2019-05-03 13:28:54.080
+!MESSAGE The model index service was accessed either before it started or after it finished running.
+!STACK 0
+org.eclipse.recommenders.utils.Logs$LogTraceException
+	at org.eclipse.recommenders.utils.Logs$LogTraceException.newTrace(Logs.java:381)
+	at org.eclipse.recommenders.utils.Logs.log(Logs.java:134)
+	at org.eclipse.recommenders.utils.Logs.log(Logs.java:126)
+	at org.eclipse.recommenders.internal.models.rcp.EclipseModelIndex.suggest(EclipseModelIndex.java:211)
+	at org.eclipse.recommenders.models.SimpleModelProvider.acquireModel(SimpleModelProvider.java:70)
+	at org.eclipse.recommenders.models.PoolingModelProvider.access$0(PoolingModelProvider.java:1)
+	at org.eclipse.recommenders.models.PoolingModelProvider$ModelPoolFactoryMediator.makeObject(PoolingModelProvider.java:96)
+	at org.eclipse.recommenders.models.PoolingModelProvider$ModelPoolFactoryMediator.makeObject(PoolingModelProvider.java:1)
+	at org.apache.commons.pool.impl.GenericKeyedObjectPool.borrowObject(GenericKeyedObjectPool.java:1220)
+	at org.eclipse.recommenders.models.PoolingModelProvider.acquireModel(PoolingModelProvider.java:67)
+	at org.eclipse.recommenders.internal.calls.rcp.RcpCallModelProvider.acquireModel(RcpCallModelProvider.java:65)
+	at org.eclipse.recommenders.internal.calls.rcp.RcpCallModelProvider.acquireModel(RcpCallModelProvider.java:1)
+	at org.eclipse.recommenders.internal.models.rcp.PrefetchModelArchiveJob.run(PrefetchModelArchiveJob.java:43)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:56)
